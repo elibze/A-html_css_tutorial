@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Sign Up Form </title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Registration Form </h1>
+
+        <form>
+            <div class="form-group">
+                <label> First Name </label>
+                <input type="text" required placeholder="Enter first name">
+            </div>
+            <div class="form-group">
+                <label> Last Name </label>
+                <input type="text" required placeholder="Enter last name">
+            </div>
+            <div class="form-group">
+                <label> Birthday </label>
+                <input type="date" required>
+            </div>
+            <div class="form-group">
+                <label> Gender </label>
+                <div class="input-gender">
+                    <div>
+                        <input type="radio" name="gender" required>
+                        <label> Male </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender">
+                        <label> Female </label>                       
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label> Email </label>
+                <input type="email" required placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label> Phone Number </label>
+                <input type="tel" required placeholder="Enter phone number">
+            </div>
+
+            <div class="form-group full-width">
+                <label> Subject </label>
+                <select required>
+                    <option value=""> Choose option </option>
+                    <option> Web Development </option>
+                    <option> Mathematics </option>
+                    <option> Data Science </option>
+                    <option> Data Structures </option>
+                    <option> UI/UX Design </option>
+                </select>
+            </div>
+
+            <div class="full-width">
+                <a href="#success-message" class="submit-btn"> Submit </a>
+            </div>
+        </form>
+
+        <div id="success-message" class="message">
+            Sign up succesful,
+            <a href="login.html"> click here to login! </a>
+        </div>
+    </div>
+
+</body>
+</html>
+
